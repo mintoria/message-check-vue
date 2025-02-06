@@ -1,0 +1,990 @@
+[
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/7b44c75a57319d49cf758aeff929e9cfb32d45c9",
+        "message": "fix: 修复修改群公告焦点一直聚焦到最后的问题",
+        "author": "王学良",
+        "timeStr": "Nov 28, 2023",
+        "id": 1,
+        "isPublish": false
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/fce0f8b1a178c51fc38d131028285f08d69a5f65",
+        "message": "fix: markdown修改列表项样式换行&amp;间距(历史问题,换行很丑)",
+        "author": "张明雪01",
+        "timeStr": "Nov 28, 2023",
+        "id": 3
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/bcce8978f4b0502665c4c4c57719f473a49982db",
+        "message": "fix: 日程操作数据库入库数据过多导致卡顿问题修复",
+        "author": "李淑峰",
+        "timeStr": "Nov 27, 2023",
+        "id": 4
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/d38367ba1e1d2cacce35291c62bf21251c08bf69",
+        "message": "fix: markdown保持老的样式基础上维护新的样式",
+        "author": "张明雪01",
+        "timeStr": "Nov 27, 2023",
+        "id": 6
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a62d7b9f25b97efd4703407c4d21bec1f8c3d191",
+        "message": "docs: 修改升级文案",
+        "author": "李晓珊",
+        "timeStr": "Nov 23, 2023",
+        "id": 7
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/3b2a585db25de3bb2c5f249eb22c4fe82c5391c9",
+        "message": "fix: 文字提取防止新增相同路径的图片",
+        "author": "王学良",
+        "timeStr": "Nov 23, 2023",
+        "id": 9
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/04d778010ff076bb5b46e7d226a251b2e495213d",
+        "message": "fix: 修复文字提取模块,添加本地图片后,查看时无法通过本地图片查看器打开",
+        "author": "王学良",
+        "timeStr": "Nov 23, 2023",
+        "id": 10
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/4d1ec7bccdf86a18485a6763cc939731aee973cd",
+        "message": "fix: 修改会话分组埋点错误问题",
+        "author": "李晓珊",
+        "timeStr": "Nov 22, 2023",
+        "id": 12
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/10159756f74d68f114b0a30bf44228818dd0a232",
+        "message": "style: 修复文字提取的样式",
+        "author": "王学良",
+        "timeStr": "Nov 16, 2023",
+        "id": 13,
+        "isPublish": true,
+        "tip": "并非只有文字提取样式的修改，还掺杂了逻辑修改"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/4a9f2293e55668c9dc3706bc45ba087cf4474e8b",
+        "message": "fix(ui走查): 重复日程间距修改&amp;会议室选择过期会议颜色修改",
+        "author": "张明雪01",
+        "timeStr": "Nov 15, 2023",
+        "id": 15,
+        "isPublish": true,
+        "tip": "纯样式修改，不涉及逻辑"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/183b933619b2e3ac7b8ef675598aa94f9de8185d",
+        "message": "perf: 优化转发到伙伴圈，先走PC获得url方法，获取失败再从服务端获取页面信息, 修改群介绍抖动问题",
+        "author": "李晓珊",
+        "timeStr": "Nov 14, 2023",
+        "id": 17,
+        "isPublish": true,
+        "tip": "无修改群介绍抖动问题的change；如真出现这种情况建议两次提交"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/149f3738a5da7135df912d1a88cf822ecc321df8",
+        "message": "feat(新增需求): markdown类型消息右键菜单新增复制项",
+        "author": "张明雪01",
+        "timeStr": "Nov 14, 2023",
+        "id": 19
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/3b87ce64869f714f89588392a14a55d81ab08703",
+        "message": "fix(1370871): 勋章字段修改替换",
+        "author": "张明雪01",
+        "timeStr": "Nov 14, 2023",
+        "id": 21
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/65ad7114e8207d85eb58d2794778782b9db16fe9",
+        "message": "docs: 更改版本号",
+        "author": "李淑峰",
+        "timeStr": "Nov 13, 2023",
+        "id": 22
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/c361838b0479b50dd1aa766f34c0fd6b64ce6a94",
+        "message": "fix: 登录设备管理文案修改",
+        "author": "陈帅11",
+        "timeStr": "Nov 13, 2023",
+        "id": 24
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/b4411126c442f6214862ff345c2d0d252aa7ab03",
+        "message": "fix: 消息搜索中markdown链接消息跳转问题",
+        "author": "陈帅11",
+        "timeStr": "Nov 13, 2023",
+        "id": 25
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/07c6427c9ae655d8c81d181b3df78341d793469d",
+        "message": "feat: 高级搜索markdown类型消息展示样式适配(不支持高亮&amp;链接类型展示为文本)",
+        "author": "张明雪01",
+        "timeStr": "Nov 13, 2023",
+        "id": 28
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/8bc4d9a2da4b913357229a22022877fb3f24a9b9",
+        "message": "merge: 合并ei-im-3.1.8分支",
+        "author": "李晓珊",
+        "timeStr": "Nov 13, 2023",
+        "id": 30
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/ccb5f524c18633ab88f8f65f9ae31e8b1501049d",
+        "message": "fix: 链接消息中网址判断优化",
+        "author": "李淑峰",
+        "timeStr": "Nov 13, 2023",
+        "id": 31,
+        "tip": "fix要写明什么问题，而不是优化",
+        "isPublish": true
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/203b9cef1a5896ccc4939477c2a16a4a14842442",
+        "message": "feat: 链接消息中网址也走白名单判断",
+        "author": "李淑峰",
+        "timeStr": "Nov 13, 2023",
+        "id": 32
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0c8c588549c38539d8dda0954bc18197b332965f",
+        "message": "fix(1370255、1370443、1370010): 修改链接消息图标展示异常、修改伙伴圈个人卡片视频图片展示视频标识、修改链接消息没有icon展示默认链接图标、新增会话分组埋点、修改UI走查",
+        "author": "李晓珊",
+        "timeStr": "Nov 10, 2023",
+        "id": 33
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/ab02fbd19e2029b19008594bb4ff7041104ab055",
+        "message": "feat(产品走查需求): 删除重复日程弹窗居中显示",
+        "author": "张明雪01",
+        "timeStr": "Nov 10, 2023",
+        "id": 35
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/44cf369b047b1bb261d1b3fbc6d76771a58a7e4c",
+        "message": "fix: codeReview问题修复，增加对空对象兼容",
+        "author": "李淑峰",
+        "timeStr": "Nov 10, 2023",
+        "id": 37
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/531ac41028a2c5af24b4035116ae0257893c42c9",
+        "message": "docs: 修改版本号",
+        "author": "陈帅11",
+        "timeStr": "Nov 10, 2023",
+        "id": 41
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/b4761f1e633365bc5b4c3363898bb40de31b2a7f",
+        "message": "style: 文字提取左侧空列表样式调整 &amp; 展示区添加换行符",
+        "author": "王学良",
+        "timeStr": "Nov 10, 2023",
+        "id": 44,
+        "tip": "非纯样式修改；不是同一类型可以多次提交",
+        "isPublish": true
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0ddbe3df72de4395b00a5303d2b97ec1ca1e7ef4",
+        "message": "style: ui走查问题修复",
+        "author": "陈帅11",
+        "timeStr": "Nov 10, 2023",
+        "id": 45
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/d0948a19994e66a97be9d295eaf86e12c933d492",
+        "message": "feat: 人才档案埋点",
+        "author": "陈帅11",
+        "timeStr": "Nov 10, 2023",
+        "id": 46
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/9608a8a40c3d4ef8ec30eb650a2a077070ed3822",
+        "message": "feat: 石墨链接消息根据用户配置决定使用内部代开还是外部打开，链接消息支持复制",
+        "author": "李淑峰",
+        "timeStr": "Nov 09, 2023",
+        "id": 47
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/b8ae3a23098e230b69669336fcf3c862d0f9bfcd",
+        "message": "feat: 群组管理文案调整",
+        "author": "张明雪01",
+        "timeStr": "Nov 09, 2023",
+        "id": 48
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a1a5ac25ad30b10d41d2f0b72d977f8802ff636b",
+        "message": "fix: 补充文字转网址，网址后缀变化",
+        "author": "李淑峰",
+        "timeStr": "Nov 09, 2023",
+        "id": 50
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/eabf28574a58a612ef3a98bb162a246d3e32dbb1",
+        "message": "feat: 幻视消息多选可以强制撤回不可转发",
+        "author": "张明雪01",
+        "timeStr": "Nov 09, 2023",
+        "id": 51
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/46e62478e154533e4c2fab5d1cf7114da68b5166",
+        "message": "refactor: 无用代码删除",
+        "author": "张明雪01",
+        "timeStr": "Nov 08, 2023",
+        "id": 53
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0a9794b6123f87be4a979ed9308c7940cc81e2ff",
+        "message": "feat: 无文本情况幻视类型消息展示内容修改",
+        "author": "张明雪01",
+        "timeStr": "Nov 08, 2023",
+        "id": 54
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/7c809455ea5e7d4beb48ac58ccb0e6b9382408e2",
+        "message": "style: 格式化空格",
+        "author": "张明雪01",
+        "timeStr": "Nov 08, 2023",
+        "id": 55
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/d43b4f21796878076f9aca4227de30453c7ecb63",
+        "message": "feat: 幻视消息类型57/58会话列表消息展示&amp;不可操作&amp;不可点赞点踩",
+        "author": "张明雪01",
+        "timeStr": "Nov 08, 2023",
+        "id": 57
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/818d3c49c7ca9c18b57af80e5fcc4e6d90babc10",
+        "message": "merge: 解决冲突",
+        "author": "李晓珊",
+        "timeStr": "Nov 08, 2023",
+        "id": 61
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/337f57fe778c6913e0ddac2edc43142c865abc3e",
+        "message": "fix: 修改个人卡片获取用户信息，不需要之前的数据",
+        "author": "李晓珊",
+        "timeStr": "Nov 08, 2023",
+        "id": 62
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/999653c0cb466558571bd3a3b19079c09ea67caf",
+        "message": "style: 晓汐聊天记录搜索样式修复",
+        "author": "陈帅11",
+        "timeStr": "Nov 08, 2023",
+        "id": 63
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0ac3d46ac068ca5b5cc7326d965431f73c475cba",
+        "message": "fix: 晓汐扩展屏抖动问题",
+        "author": "陈帅11",
+        "timeStr": "Nov 08, 2023",
+        "id": 64
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/8957b75fbd9033dd0a59c5022c458653b881ee93",
+        "message": "fix: 修改通知中展示的我为你",
+        "author": "李晓珊",
+        "timeStr": "Nov 08, 2023",
+        "id": 65,
+        "isPublish": true,
+        "tip": "需求变更"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/5650edbfd7df3b938fc8e5fe5800127c03ac1348",
+        "message": "merge: 解决冲突",
+        "author": "陈帅11",
+        "timeStr": "Nov 08, 2023",
+        "id": 66
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0d295627b004b869dcd6735735b56421e0656862",
+        "message": "fix: 晓汐扩展屏显示异常",
+        "author": "陈帅11",
+        "timeStr": "Nov 08, 2023",
+        "id": 67
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/ff52418de455515f29b11a27525016ab10a1e3f6",
+        "message": "perf: 变量名修改",
+        "author": "陈帅11",
+        "timeStr": "Nov 08, 2023",
+        "id": 68,
+        "isPublish": true,
+        "tip": "pref和rafactor区分"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/9370e3df8f26b02c08e01dec31fa3d1e85c8b46c",
+        "message": "feat: 伙伴圈消息组件宽度由外部传人",
+        "author": "陈帅11",
+        "timeStr": "Nov 08, 2023",
+        "id": 69,
+        "isPublish": true,
+        "tip": "这是需求变更？？？"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/b5168dea84ac16a3a8a261388ff541cffd303e75",
+        "message": "fix: 后端返回数据异常兼容",
+        "author": "李淑峰",
+        "timeStr": "Nov 07, 2023",
+        "id": 70
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/7badd578de734fcaf1993966453ac0686b1b94c8",
+        "message": "feat: 链接消息默认摘要更改",
+        "author": "李淑峰",
+        "timeStr": "Nov 07, 2023",
+        "id": 71
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/4a5b575d7c02c399805d2837f2aa6a137040a09c",
+        "message": "docs: 修改版本号为3.1.9",
+        "author": "李晓珊",
+        "timeStr": "Nov 07, 2023",
+        "id": 72
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/9aa6d1762b25514f31c9a9030fa353f65633cd75",
+        "message": "docs: 修改版本号为3.1.9",
+        "author": "李晓珊",
+        "timeStr": "Nov 07, 2023",
+        "id": 73
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/ce7bd0ed14bfccbc4d745095a9d4ce46db781570",
+        "message": "fix: 解决打包构建慢的问题",
+        "author": "王学良",
+        "timeStr": "Nov 07, 2023",
+        "id": 74
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/51fbe4c31c3a50fcce498edf72fad08b1a964496",
+        "message": "fix: 修改收藏列表搜索时高亮结构被破坏的问题",
+        "author": "陈帅11",
+        "timeStr": "Nov 07, 2023",
+        "id": 76
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a4f5bbe65314f24c66abc2a12883a714034dbb44",
+        "message": "fix(1369976): markdown引用在同一行问题&amp;注释暗黑模式样式",
+        "author": "张明雪01",
+        "timeStr": "Nov 06, 2023",
+        "id": 78
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/aae06724194d60b67890397b0a9184c23842601a",
+        "message": "docs: 修改日志等级  &amp; commitlint文件丢失",
+        "author": "王学良",
+        "timeStr": "Nov 03, 2023",
+        "id": 79
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0ee6a6b549142ff13787d8f8464377d4a10c4398",
+        "message": "fix: 修改发布带图片动态或者删除动态个人卡片个人空间图片展示异常",
+        "author": "李晓珊",
+        "timeStr": "Nov 03, 2023",
+        "id": 81
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/f5c7ca45c886f1fc1c06a8ae37b70fea7e1e5364",
+        "message": "docs: 版本号和升级文案修改",
+        "author": "王学良",
+        "timeStr": "Nov 03, 2023",
+        "id": 82
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/4562fdf90854302d04e4bb26cf4bc904d23fd1dc",
+        "message": "merge: 合并ei-im-3.1.8分支",
+        "author": "李晓珊",
+        "timeStr": "Nov 02, 2023",
+        "id": 84
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a3303322dde43c9a15a1a11ec0ff6e16b8e6f3f6",
+        "message": "docs: 文案修改",
+        "author": "王学良",
+        "timeStr": "Nov 02, 2023",
+        "id": 85,
+        "tip": "注释修改算rafactor比较合理，docs的修改指的是非业务层项目构建配置文件的修改",
+        "isPublish": true
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/683d43d4ae3aa116ce35ed307beecd07d7432b89",
+        "message": "feat: 删除文字提取的AI部分",
+        "author": "王学良",
+        "timeStr": "Nov 02, 2023",
+        "id": 86
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0b9d9743ecfc52c417a573656e5cff02b6501efa",
+        "message": "refactor: 修复不规范代码",
+        "author": "王学良",
+        "timeStr": "Nov 02, 2023",
+        "id": 87,
+        "tip": "为啥这么多changes？",
+        "isPublish": true
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0719fc2ae0e7b45040ac1f7a87cacc1ec56d3071",
+        "message": "fix(1369030): 修改群组管理抖动、修改转发到伙伴圈",
+        "author": "李晓珊",
+        "timeStr": "Nov 01, 2023",
+        "id": 89
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/c5d13da862867eff8608e4f311f0f0e726c7b64f",
+        "message": "fix: 小米和vivo推送字段变更",
+        "author": "王学良",
+        "timeStr": "Oct 31, 2023",
+        "id": 90,
+        "isPublish": true,
+        "tip": "feat，用docs都比用fix好"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/f7545e84f38724501471c79ef55e51a65e179eb2",
+        "message": "fix(1368911、1369007): 修改开放群文案bug和开放群分页size",
+        "author": "李晓珊",
+        "timeStr": "Oct 31, 2023",
+        "id": 92
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a0730b8a01591c6666a57b856304cd73a8346808",
+        "message": "fix: 修改@全体成员的判断逻辑",
+        "author": "陈帅11",
+        "timeStr": "Oct 30, 2023",
+        "id": 94
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/7385297445a4e55178c91f8c8c3b3e6e93d7219e",
+        "message": "feat: 新增内置浏览器转发图片到伙伴圈、新增转发到伙伴圈灵犀协议",
+        "author": "李晓珊",
+        "timeStr": "Oct 27, 2023",
+        "id": 95
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/f36ad887907ec8af87e3060210f3f7a7015de218",
+        "message": "fix: 解决导航模块浮层弹出后,不能拖拽问题",
+        "author": "王学良",
+        "timeStr": "Oct 26, 2023",
+        "id": 96
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/60b8ef20b39a85d01049e6e2b7f469fc403e7f34",
+        "message": "fix: 会议室重复日程判断sentry报错",
+        "author": "张明雪01",
+        "timeStr": "Oct 25, 2023",
+        "id": 97
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/e55a5329f459bde0791d9b5e4428014c563cbb93",
+        "message": "fix(1368436): 修改编辑分组时@我分组和未读分组不展示会话数量",
+        "author": "李晓珊",
+        "timeStr": "Oct 25, 2023",
+        "id": 98
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/51f1ef237a01458a3f4af5d0671fab5d96a6fb0f",
+        "message": "fix: 修改伙伴圈转发消息到灵犀，linkMessage字段一定存在需要根据linkUrl来判断是否存在链接",
+        "author": "李晓珊",
+        "timeStr": "Oct 25, 2023",
+        "id": 99
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/348186c944bc9a49dbace8e4c2da8c0b4ad2bfd5",
+        "message": "fix: 修改设备退出文案",
+        "author": "陈帅11",
+        "timeStr": "Oct 25, 2023",
+        "id": 100
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/11119cf58e2d76f10205677d716f23baf48e736b",
+        "message": "fix: 接口数据格式修改",
+        "author": "陈帅11",
+        "timeStr": "Oct 25, 2023",
+        "id": 102
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/79db459bc61fab60a24fa76f6172e6048caa0ed5",
+        "message": "feat: 添加悬浮群介绍展示全部内容",
+        "author": "李晓珊",
+        "timeStr": "Oct 24, 2023",
+        "id": 104
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0d6d71d1303f603fae96891e7ec8359e7f449fb5",
+        "message": "docs: 修改版本号",
+        "author": "李晓珊",
+        "timeStr": "Oct 24, 2023",
+        "id": 105
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/be029c93014e9d658466c2af1bab774d33dcd10f",
+        "message": "fix: 修改加入会话抽屉不更新问题、修改@我+未读会话抽屉过滤",
+        "author": "李晓珊",
+        "timeStr": "Oct 24, 2023",
+        "id": 106
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/35e192f690d3e3dc4e8a491f76c316576a64f47c",
+        "message": "merge: 解决冲突",
+        "author": "陈帅11",
+        "timeStr": "Oct 24, 2023",
+        "id": 108
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a317b8458af6ed59122de03d0ebd7e9ba4d52e06",
+        "message": "merge: 解决冲突",
+        "author": "陈帅11",
+        "timeStr": "Oct 24, 2023",
+        "id": 109
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/b0b095c0a0a0a4128a75a837ea5cecc5100d1d23",
+        "message": "docs: 升级版本号",
+        "author": "王学良",
+        "timeStr": "Oct 23, 2023",
+        "id": 112
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/9ac5f370a94e5b45bf8a24e60ee7806d17a31f0e",
+        "message": "feat: 文字提取,右下角添加快捷入口",
+        "author": "王学良",
+        "timeStr": "Oct 23, 2023",
+        "id": 113
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/40ff407b9503a0a19036f0a2d4a5080a71b79dbe",
+        "message": "feat: 文字提取,输入框回车行为改为发送,换行改为cmd+enter",
+        "author": "王学良",
+        "timeStr": "Oct 23, 2023",
+        "id": 114
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/c91803f536bd6571eff3eb329ded07a50e1699b6",
+        "message": "docs: 修改版本号",
+        "author": "王学良",
+        "timeStr": "Oct 23, 2023",
+        "id": 115
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/7757b42370b99c69086bd6c4132ec90513afda8e",
+        "message": "feat: 文字功能-新加功能编写",
+        "author": "王学良",
+        "timeStr": "Oct 20, 2023",
+        "id": 116,
+        "isPublish": true,
+        "tip": "新加功能编写？message不清晰"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/4128228f0b3f4bb27c52419beec6d30c7f1db226",
+        "message": "fix: 文字提取-修复截取图片,从图片查看器进入文字提取, 转译失败问题",
+        "author": "王学良",
+        "timeStr": "Oct 20, 2023",
+        "id": 117
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/d5c37485b7fa0adaa7ab2457a33016e9589a745c",
+        "message": "feat: 文字提取-图片可以多次提取",
+        "author": "王学良",
+        "timeStr": "Oct 20, 2023",
+        "id": 118
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/23488871880a6d02435a94688a39f274009c448d",
+        "message": "style: 修改设备管理图标样式",
+        "author": "陈帅11",
+        "timeStr": "Oct 20, 2023",
+        "id": 119
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/b4e35f6f79309b8dd8d9e1018021cfc0daac6ea1",
+        "message": "fix: 修改枚举取值错误",
+        "author": "陈帅11",
+        "timeStr": "Oct 20, 2023",
+        "id": 120
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a1e4ad1339b0cca66d629a45a76f9284bb25ff89",
+        "message": "fix: 修复幻视界面打开文字提取功能, 内置浏览器空页面问题",
+        "author": "王学良",
+        "timeStr": "Oct 20, 2023",
+        "id": 121
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/b690dc28ed37387c713cc3b82b8a1791a6f56acc",
+        "message": "docs: 修改版本号",
+        "author": "王学良",
+        "timeStr": "Oct 20, 2023",
+        "id": 122
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/c5f84261a69d2c88af9368b38706866d51d6fb40",
+        "message": "feat(需求变更): 重复周期截止时间根据日程开始时间重置",
+        "author": "张明雪01",
+        "timeStr": "Oct 19, 2023",
+        "id": 123
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/e42da7a6285702bd74dec34085eac1eb3870b5af",
+        "message": "fix(自测): 编辑重复日程的单个日程不做会议室选择限制",
+        "author": "张明雪01",
+        "timeStr": "Oct 19, 2023",
+        "id": 124
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/be2dcb913bb8f5ac674fd64e583354682a37e6a9",
+        "message": "fix(自测): 重复周期换行问题&amp;重复组件每天不会被高亮问题",
+        "author": "张明雪01",
+        "timeStr": "Oct 19, 2023",
+        "id": 125
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a7ee60188ff61f6d7b37fb9dbf6e933661884d7c",
+        "message": "perf: 优化通讯录-开放群分页组件",
+        "author": "李晓珊",
+        "timeStr": "Oct 19, 2023",
+        "id": 126,
+        "tip": "其实很多rafactor，但确实也有组件的更改"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/b100058cb2ce032209b48491b123c4b0b49601fb",
+        "message": "feat: 完善文字提取功能",
+        "author": "王学良",
+        "timeStr": "Oct 19, 2023",
+        "id": 127
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a8c830e1d1906a25d0c60a285898ed4f2591f0e3",
+        "message": "feat: 通过内置浏览器打开不合法的url时,给出合理的提示",
+        "author": "王学良",
+        "timeStr": "Oct 19, 2023",
+        "id": 128
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/aabb73bf9c3ef6c0e2726d2139cafdba62742f6c",
+        "message": "fix: 修复new URL异常报错",
+        "author": "王学良",
+        "timeStr": "Oct 18, 2023",
+        "id": 129
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/48f103a030bd638a9618e303d631a7625e71c264",
+        "message": "fix: 修复sessionsList的sessions不存在的问题",
+        "author": "王学良",
+        "timeStr": "Oct 18, 2023",
+        "id": 130
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/8fba93aaecd38331f6ad3317d5b14ab8a4aa66c4",
+        "message": "feat: 文字提取-灵犀截图后插入到文字提取面板",
+        "author": "王学良",
+        "timeStr": "Oct 18, 2023",
+        "id": 131
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/203265af4486ecf89e644600551eaf4be77ec518",
+        "message": "perf: 修改sessionList model中selected为string类型记录ID、删除移除会话动画相关代码",
+        "author": "李晓珊",
+        "timeStr": "Oct 18, 2023",
+        "id": 132
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a5a0376c2bc82089f7083a8b8a66d5a4f4a0d4ad",
+        "message": "refactor: 抽离currentGroupSessionList useSelector逻辑",
+        "author": "李晓珊",
+        "timeStr": "Oct 18, 2023",
+        "id": 133
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/f1d628aee6b18f7aa4e42bed6f013f528486fdaf",
+        "message": "feat: 文字提取功能-左侧bar展开收缩功能",
+        "author": "王学良",
+        "timeStr": "Oct 18, 2023",
+        "id": 134
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/767019ace1c61e87066488ce13272e67038b23d6",
+        "message": "refactor(codereview): 枚举字段名修改&amp;zindex提取枚举&amp;日期相等判断使用dayjs方法",
+        "author": "张明雪01",
+        "timeStr": "Oct 18, 2023",
+        "id": 135
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/536fcbb7bc5aa8dae3af4a64dc3c4c6fc89f17ec",
+        "message": "refactor(codereview): 勋章公用组件提取",
+        "author": "张明雪01",
+        "timeStr": "Oct 18, 2023",
+        "id": 136
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a498aecae131bf5f247e241b496a1c85547e8e8d",
+        "message": "feat: 完善文字提取交互细节",
+        "author": "王学良",
+        "timeStr": "Oct 18, 2023",
+        "id": 137
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a02db6d9a7bda3355ef6be5f775cd953d6ee20be",
+        "message": "refactor: 晓汐消息搜索判断是否为晓汐通过imCode判断",
+        "author": "陈帅11",
+        "timeStr": "Oct 17, 2023",
+        "id": 138,
+        "tip": "pref",
+        "isPublish": true
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/879f87255466111902ef360a04b2c7af3b91c85f",
+        "message": "fix: 修改tips消息我为你",
+        "author": "李晓珊",
+        "timeStr": "Oct 17, 2023",
+        "id": 139,
+        "isPublish": true,
+        "tip": "需求变更吧"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/42602be819c706900e7c2976f5d6b085d6b2e40e",
+        "message": "feat: 晓汐聊天记录搜索不支持链接",
+        "author": "陈帅11",
+        "timeStr": "Oct 16, 2023",
+        "id": 140
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/d59c04e05766a259e3d1de50951d097e89244081",
+        "message": "feat: 晓汐聊天记录搜索支持markdown格式",
+        "author": "陈帅11",
+        "timeStr": "Oct 16, 2023",
+        "id": 141
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/aed87109a71cb19dd9828ceec810d1d7725e8806",
+        "message": "feat: 文字提取导出功能",
+        "author": "王学良",
+        "timeStr": "Oct 16, 2023",
+        "id": 142
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/1c055f12943dea80df9d1e53b4df262e5b626ac0",
+        "message": "fix(自测): 伙伴日历不可见详情状态下才加伙伴名逗号",
+        "author": "张明雪01",
+        "timeStr": "Oct 16, 2023",
+        "id": 144
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/058b992c3695e1a82c7fffd3e45680565b7f48a2",
+        "message": "fix(自测&amp;cr): 重复周期初始化忘加namespace问题",
+        "author": "张明雪01",
+        "timeStr": "Oct 16, 2023",
+        "id": 145
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/84c8377805b3295de49b4bbc09c7162cecc8e14c",
+        "message": "fix(自测): 当有一个链接一个邮箱时，不单行缩略问题",
+        "author": "张明雪01",
+        "timeStr": "Oct 16, 2023",
+        "id": 146
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0df41528ed09b54ddd367d77900bebab29329d35",
+        "message": "fix(自测): 勋章墙不能滚动",
+        "author": "张明雪01",
+        "timeStr": "Oct 16, 2023",
+        "id": 147
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/439c69a785583e9107ce68800c00e51d3f030fa0",
+        "message": "fix: 注释更改为正确内容",
+        "author": "李淑峰",
+        "timeStr": "Oct 16, 2023",
+        "id": 149,
+        "isPublish": true,
+        "tip": "rafactor"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/9f5fc6c4bb9135957a84cee86e62e20749228bbf",
+        "message": "feat: 点击日历tab调接口上报",
+        "author": "李晓珊",
+        "timeStr": "Oct 16, 2023",
+        "id": 150
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/236f3b80ef65c20361261d1b0e4f48ab9ead2760",
+        "message": "feat: 添加伙伴圈链接消息兼容",
+        "author": "李晓珊",
+        "timeStr": "Oct 16, 2023",
+        "id": 152
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/fcf85a6070ab26a91130cd1d0fbdf25b899f164a",
+        "message": "style: enum枚举值大写",
+        "author": "陈帅11",
+        "timeStr": "Oct 16, 2023",
+        "id": 153,
+        "isPublish": true,
+        "tip": "你自己看看这不离谱吗？？？"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/9b3244aa53271419e93cd1d77fbf37ccac7fd839",
+        "message": "feat: 文字提取功能-识别结果AI操作",
+        "author": "王学良",
+        "timeStr": "Oct 16, 2023",
+        "id": 155
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/4b001a83c93ad631c08f4b83ecb1235ae163ca49",
+        "message": "feat: 晓汐聊天记录搜索取消携带默认的endtime",
+        "author": "陈帅11",
+        "timeStr": "Oct 16, 2023",
+        "id": 156
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/23d23062d0965f454534e545a7542e70e026a692",
+        "message": "feat: 新增内置浏览器转发至伙伴圈、修改开放群列表loadMore逻辑",
+        "author": "李晓珊",
+        "timeStr": "Oct 13, 2023",
+        "id": 157
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/fba295cfad2c7ce0bf961d9301f9fef46a0466a4",
+        "message": "feat: 重复日程编辑此日程时，隐藏重复周期字段",
+        "author": "张明雪01",
+        "timeStr": "Oct 13, 2023",
+        "id": 158
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/1498aa5e4e25c61415e56207534cfc267e64f51a",
+        "message": "feat: 修改升级文案&amp;版本号",
+        "author": "陈帅11",
+        "timeStr": "Oct 13, 2023",
+        "id": 162
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/0e1a35b5835282ea7dd04e39ee9156ec7c275504",
+        "message": "feat: 登录上报用户静默升级设置",
+        "author": "陈帅11",
+        "timeStr": "Oct 12, 2023",
+        "id": 163
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/3aa76473713f4c9595a5294aa626b411cae461f8",
+        "message": "feat: 登录上报操作系统版本",
+        "author": "陈帅11",
+        "timeStr": "Oct 12, 2023",
+        "id": 164
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/ea78cf5fc522e088505e46541460047470bbe917",
+        "message": "feat: 文字消息转链接允许点开",
+        "author": "李淑峰",
+        "timeStr": "Oct 12, 2023",
+        "id": 165
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a289371dcdbde9113940a8166c1ba09a5d4339d3",
+        "message": "style: 修改群主转移时群成员列表item布局，保证可点击区域铺满",
+        "author": "李晓珊",
+        "timeStr": "Oct 12, 2023",
+        "id": 166
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/c749209e0bfee59fa63bce08ee0b0ba7c540150d",
+        "message": "feat: 新增仅群主/管理员可@全员权限设置",
+        "author": "李晓珊",
+        "timeStr": "Oct 12, 2023",
+        "id": 167
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/ef122f0b200c7af72595fc8e631324e0d6c901de",
+        "message": "docs(依赖): 去除yarn.lock不必要的更新",
+        "author": "张明雪01",
+        "timeStr": "Oct 12, 2023",
+        "id": 168
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a40a654cb287e5dcfc357e8a123057eca5d2dd5b",
+        "message": "fix: 勋章入口接口字段修改",
+        "author": "张明雪01",
+        "timeStr": "Oct 12, 2023",
+        "id": 169
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/36e946d3dc6945b4e18aa10f5747a03d4aafb87c",
+        "message": "docs(文件命名修改): 大小写变更-修改为正确命名",
+        "author": "张明雪01",
+        "timeStr": "Oct 12, 2023",
+        "id": 170
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/a58a209b20ad8b6076910175324dcb7f5a774fe5",
+        "message": "docs(文件命名修改): 大小写变更-重命名文件",
+        "author": "张明雪01",
+        "timeStr": "Oct 12, 2023",
+        "id": 171
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/2aebd5e19a49fb88deb4902e45e8400bf1da65c9",
+        "message": "docs(依赖): 新增markdown第三方库(代码高亮&amp;表格)",
+        "author": "张明雪01",
+        "timeStr": "Oct 12, 2023",
+        "id": 172
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/ec07540aadf670906b579f291f6edb7258880f8f",
+        "message": "feat: markdown消息支持格式扩展",
+        "author": "张明雪01",
+        "timeStr": "Oct 12, 2023",
+        "id": 173
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/4d60b76205601b099c2471be24980c4a19ea7873",
+        "message": "refactor: 代码优化",
+        "author": "陈帅11",
+        "timeStr": "Oct 12, 2023",
+        "id": 175,
+        "isPublish": true,
+        "tip": "改了功能逻辑就不是rafactor"
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/2332843305fcc75538d1b3ecb518874842ce5257",
+        "message": "feat: 通讯录新增开放群列表、群介绍展示修改",
+        "author": "李晓珊",
+        "timeStr": "Oct 11, 2023",
+        "id": 177
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/b680eed9b8593c99aa71ed68da4895c29a1e4dda",
+        "message": "feat: 日程详情删除日程弹窗新增参与日程数目大于一个条件判断",
+        "author": "张明雪01",
+        "timeStr": "Oct 11, 2023",
+        "id": 178
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/ee1c71f47c956fa4484c887f3a337cb3e626fef8",
+        "message": "feat: 用户点击检查更新有灰度版本，即使当前用户不在灰度范围内也提醒用户有新版本",
+        "author": "陈帅11",
+        "timeStr": "Oct 11, 2023",
+        "id": 179
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/bec8eef49b0f1d600715089b5f849d8247899cc7",
+        "message": "fix: 登录二维码失效后不可点击问题修复",
+        "author": "陈帅11",
+        "timeStr": "Oct 11, 2023",
+        "id": 180
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/870ddce1e5e9fc16559df19eb14db0880407fccb",
+        "message": "fix: webview在失去焦点后全选出现遮罩层问题修复",
+        "author": "陈帅11",
+        "timeStr": "Oct 11, 2023",
+        "id": 181
+    },
+    {
+        "href": "https://git.baijia.com/enterprise-information/ei-pc/-/commit/2ac1b76b25c70911ac80c8ac322a66ecc68a2e0b",
+        "message": "feat: 文字提取功能, 富文本部分开发",
+        "author": "王学良",
+        "timeStr": "Oct 11, 2023",
+        "id": 183
+    }
+]
