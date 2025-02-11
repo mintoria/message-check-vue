@@ -2,6 +2,9 @@ import axios from 'axios'
 import { resReject, resResolve, reqReject, reqResolve } from './interceptors'
 
 export function createAxios(options = {}) {
+  // 设置默认请求头
+  axios.defaults.headers.common['Access-Control-Expose-Headers'] = 'x-total-pages,x-per-page,x-page,x-total,x-next-page,x-prev-page'
+
   const defaultOptions = {
     timeout: 12000,
   }
@@ -15,5 +18,5 @@ export function createAxios(options = {}) {
 }
 
 export const request = createAxios({
-  baseURL: import.meta.env.VITE_BASE_API,
+  baseURL: "",
 })

@@ -1,5 +1,9 @@
 <template>
-  <QueryBar v-if="$slots.queryBar" mb-30 @search="handleSearch" @reset="handleReset">
+  <QueryBar v-if="$slots.queryBar" mb-30 @search="() => {
+    handleSearch()
+  }" @reset="() => {
+    handleReset()
+  }">
     <slot name="queryBar" />
   </QueryBar>
 
@@ -71,7 +75,12 @@
   const loading = ref(false)
   const initQuery = { ...props.queryItems }
   const tableData = ref([])
-  const pagination = reactive({ page: 1, pageSize: 10 })
+  const pagination = reactive({
+    itemCount: 0,    // 总条数（替换 total）
+    page: 1,         // 当前页码
+    pageSize: 10     // 每页条数（替换 perPage）
+  })
+
 
   async function handleQuery() {
     try {
@@ -79,15 +88,22 @@
       let paginationParams = {}
       // 如果非分页模式或者使用前端分页,则无需传分页参数
       if (props.isPagination && props.remote) {
-        paginationParams = { pageNo: pagination.page, pageSize: pagination.pageSize }
+        paginationParams = {
+          pageSize: pagination.pageSize || 10,
+          page: pagination.page || 1,
+          total: pagination.itemCount || 0,
+        }
       }
-      const { data } = await props.getData({
+      const res = await props.getData({
         ...props.queryItems,
         ...props.extraParams,
         ...paginationParams,
       })
+      const { data, pagination: paginationData } = res || {}
       tableData.value = data?.pageData || data
-      pagination.itemCount = data.total ?? data.length
+      pagination.itemCount = paginationData.total ?? data.length
+      pagination.page = paginationData.page ?? 1
+      pagination.pageSize = paginationData.pageSize ?? 10
     } catch (error) {
       tableData.value = []
       pagination.itemCount = 0

@@ -6,8 +6,10 @@
                 <n-select title="创建人" :label-width="50" v-model:value="value" :options="options"
                     @update:value="handleUpdateValue" style=" width: 300px;" />
             </div>
-            <CrudTable r ref="$table" v-model:query-items="queryItems" :extra-params="extraParams" :scroll-x="1200"
-                :columns="columns" :get-data="api.getFilterErrorPosts" @on-data-change="(data) => (tableData = data)">
+            <CrudTable ref="$table" v-model:query-items="queryItems" :extra-params="extraParams" :scroll-x="1200"
+                :columns="columns" :get-data="api.getFilterErrorPosts" @on-data-change="(data) => {
+                    tableData = data
+                }">
             </CrudTable>
         </n-card>
         <n-card class="mt-12" title="错误率占比" segmented>
@@ -32,6 +34,7 @@
     import { NButton, NSwitch } from 'naive-ui'
     import { formatDateTime, renderIcon, isNullOrUndef } from '@/utils'
     import { useCRUD } from '@/composables'
+    import { onActivated } from 'vue'
 
     defineOptions({ name: 'Crud' })
 
@@ -75,7 +78,7 @@
                 return h(NSwitch, {
                     size: 'small',
                     rubberBand: false,
-                    value: row['isPublish'],
+                    value: true,
                     disabled: true,
                     onUpdateValue: () => { $message.info('不可操作') },
                 })
@@ -91,76 +94,17 @@
             title: '备注', key: 'tip', width: 150, ellipsis: { tooltip: true }
         },
         // {title: '分类', key: 'category', width: 80, ellipsis: {tooltip: true } },
-        { title: '创建人', key: 'author', width: 80 },
+        { title: '创建人', key: 'committer_name', width: 80 },
         {
             title: '创建时间',
-            key: 'timeStr',
+            key: 'created_at',
             width: 150,
             render(row) {
-                return h('span', formatDateTime(row['timeStr']))
+                return h('span', formatDateTime(row['created_at']))
             },
-        },
-        // {
-        //   title: '最后更新时间',
-        //   key: 'updateDate',
-        //   width: 150,
-        //   render(row) {
-        //     return h('span', formatDateTime(row['updateDate']))
-        //   },
-        // },
-        //     {
-        //         title: '操作',
-        //         key: 'actions',
-        //         width: 240,
-        //         align: 'center',
-        //         fixed: 'right',
-        //         hideInExcel: true,
-        //         render(row) {
-        //             return [
-        //                 h(
-        //                     NButton,
-        //                     {
-        //                         size: 'small',
-        //                         type: 'primary',
-        //                         secondary: true,
-        //                         onClick: () => handleView(row),
-        //                     },
-        //                     { default: () => '查看', icon: renderIcon('majesticons:eye-line', { size: 14 }) }
-        //                 ),
-        //                 h(
-        //                     NButton,
-        //                     {
-        //                         size: 'small',
-        //                         type: 'primary',
-        //                         style: 'margin-left: 15px;',
-        //                         onClick: () => handleEdit(row),
-        //                     },
-        //                     { default: () => '编辑', icon: renderIcon('material-symbols:edit-outline', { size: 14 }) }
-        //                 ),
-
-        //                 h(
-        //                     NButton,
-        //                     {
-        //                         size: 'small',
-        //                         type: 'error',
-        //                         style: 'margin-left: 15px;',
-        //                         onClick: () => handleDelete(row.id),
-        //                     },
-        //                     {
-        //                         default: () => '删除',
-        //                         icon: renderIcon('material-symbols:delete-outline', { size: 14 }),
-        //                     }
-        //                 ),
-        //             ]
-        //         },
-        //     },
-        //
+        }
     ]
 
-    // // 选中事件
-    // function onChecked(rowKeys) {
-    //     if (rowKeys.length) $message.info(`选中${rowKeys.join(' ')}`)
-    // }
 
 
 
@@ -244,55 +188,56 @@
         ],
     });
 
-    onMounted(async () => {
+    // 将获取数据的逻辑抽取为独立函数
+    const fetchChartData = async () => {
         try {
-            $table.value?.handleSearch()
-            const response = await api.getPosts();
-            let datas = response.data.pageData;
-            // console.log(datas.filter((item) => item.isPublish), 333);
-            let names = [];
+            const response = await api.getFilterErrorPosts();
+            let datas = response.data;
             let dataObj = {};
             let data = [];
             let trendData = [];
+
             datas.forEach((item) => {
-                if (!Object.keys(dataObj).includes(item.author)) {
-                    dataObj[item.author] = [];
+                if (!Object.keys(dataObj).includes(item.committer_name)) {
+                    dataObj[item.committer_name] = [];
                 }
-                dataObj[item.author].push(item.isPublish ? 1 : 0);
+                dataObj[item.committer_name].push(item.isPublish ? 1 : 0);
             });
+
             let xAxisData = Object.keys(dataObj);
             trendOption.xAxis[0].data = xAxisData;
-            //计算每个author的数组值的1的个数，将这个个数/这个author的数组值的总数*100，得到这个author的错误率
+
             for (let key in dataObj) {
                 let count = 0;
                 dataObj[key].forEach((item) => {
-                    if (item == 1) {
-                        count++;
-                    }
+                    if (item == 1) count++;
                 });
                 data.push({
                     name: key,
                     value: count / dataObj[key].length,
                 });
             }
+
             xAxisData.forEach((item) => {
                 let count = 0;
                 dataObj[item].forEach((item) => {
-                    if (item == 1) {
-                        // console.log(item);
-                        count++;
-                    }
+                    if (item == 1) count++;
                 });
                 trendData.push(count);
             });
 
-            // console.log(response);
             skillsOption.series[0].data = data;
             trendOption.series[0].data = trendData;
         } catch (error) {
             console.error(error);
         }
-    });
+    }
+
+    // 组件被激活时获取数据
+    onActivated(() => {
+        $table.value?.handleSearch()
+        fetchChartData()
+    })
 
     const userStore = useUserStore()
 

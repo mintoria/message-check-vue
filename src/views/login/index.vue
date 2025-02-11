@@ -28,9 +28,6 @@
           </n-input>
         </div>
 
-        <div mt-20>
-          <n-checkbox :checked="isRemember" label="记住我" :on-update:checked="(val) => (isRemember = val)" />
-        </div>
 
         <div mt-20>
           <n-button h-50 w-full rounded-5 text-16 type="primary" :loading="loading" @click="handleLogin">
@@ -80,14 +77,17 @@
     try {
       loading.value = true
       $message.loading('正在验证...')
-      const res = await api.login({ name, password: password.toString() })
-      $message.success('登录成功')
-      setToken(res.data.token)
-      if (isRemember.value) {
-        lStorage.set('loginInfo', { name, password })
-      } else {
-        lStorage.remove('loginInfo')
+      const params = {
+        username: name,
+        password: password,
+        grant_type: 'password',
+        client_id: 'client_ei_pc',
+        client_secret: 123456
       }
+      const res = await api.login(params)
+      console.log(res)
+      $message.success('登录成功')
+      setToken(res.data.access_token)
       await addDynamicRoutes()
       if (query.redirect) {
         const path = query.redirect

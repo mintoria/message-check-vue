@@ -2,6 +2,13 @@ import { getToken } from '@/utils'
 import { resolveResError } from './helpers'
 
 export function reqResolve(config) {
+  // 设置默认请求头
+  config.headers = {
+    'Content-Type': 'application/json;charset=UTF-8',
+    version: '3.5.6-alpha.1',
+    ...config.headers,
+  }
+
   // 处理不需要token的请求
   if (config.noNeedToken) {
     return config
@@ -16,7 +23,7 @@ export function reqResolve(config) {
    * * 加上 token
    * ! 认证方案: JWT Bearer
    */
-  config.headers.Authorization = config.headers.Authorization || 'Bearer ' + token
+  // config.headers.Authorization = config.headers.Authorization || 'Bearer ' + token
 
   return config
 }
@@ -27,7 +34,24 @@ export function reqReject(error) {
 
 export function resResolve(response) {
   // TODO: 处理不同的 response.headers
-  const { data, status, config, statusText } = response
+  const { data, status, config, statusText,headers} = response
+  console.log(response,111)
+  if(data&&data.code===undefined){
+    return Promise.resolve({
+      code:0,
+      data:data,
+      message:'success',
+      pagination:{
+        total:Number(headers['x-total']),
+        page:Number(headers['x-page']),
+        pageSize:Number(headers['x-per-page']),
+        totalPages:Number(headers['x-total-pages']),
+        nextPage:Number(headers['x-next-page']),
+        prevPage:Number(headers['x-prev-page']),
+      }
+    })
+  }
+
   if (data?.code !== 0) {
     const code = data?.code ?? status
 
